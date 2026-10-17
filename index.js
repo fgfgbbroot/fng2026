@@ -11,18 +11,18 @@ const UPLOAD_URL = process.env.UPLOAD_URL || '';      // 节点或订阅自动�
 const PROJECT_URL = process.env.PROJECT_URL || '';    // 需要上传订阅或保活时需填写项目分配的url,例如：https://google.com
 const AUTO_ACCESS = process.env.AUTO_ACCESS || false; // false关闭自动保活，true开启,需同时填写PROJECT_URL变量
 const FILE_PATH = process.env.FILE_PATH || '.tmp';   // 运行目录,sub节点文件保存目录
-const SUB_PATH = process.env.SUB_PATH || 'ata';       // 订阅路径
+const SUB_PATH = process.env.SUB_PATH || 'fgfg';       // 订阅路径
 const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;        // http服务订阅端口
 const UUID = process.env.UUID || '845f1883-d4be-41a2-bba9-4283843bb422'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
 const NEZHA_SERVER = process.env.NEZHA_SERVER || '';        // 哪吒v1填写形式: nz.abc.com:8008  哪吒v0填写形式：nz.abc.com
 const NEZHA_PORT = process.env.NEZHA_PORT || '';            // 使用哪吒v1请留空，哪吒v0需填写
 const NEZHA_KEY = process.env.NEZHA_KEY || '';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'udp.ata.edu.eu.org';          // 固定隧道域名,留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNDE4NGYxODk2MTQ4YzhiMDIzMWVkNjVlZjhiMWZhZTEiLCJ0IjoiNGE3YWM2NGYtYTNkZi00YmY2LTk4YjMtNGI0YmFiNGRhZGNkIiwicyI6Ik16WmhPVEJqWldJdE1Ua3paUzAwTmpVeExXRmhOemd0WTJWbE5tTXdaRGcxWTJaayJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'fgfg.my.id';          // 固定隧道域名,留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNThiZGFiODc1M2Q1ZTA4N2E5MGEyOTMxODdiZDVmNDkiLCJ0IjoiNzc4MDU2OTctNzE4OS00NzA4LWJhZGQtYWI5ZmE4ZmJlYzcyIiwicyI6Ik5XSmtaVEJqTURGbE5qazFZbVZtTVdNd1lXUTFORGc0TmpobU1HTXhNVGc9In0=';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
 const ARGO_PORT = process.env.ARGO_PORT || 8001;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
-const CFIP = process.env.CFIP || '104.17.3.81';            // 节点优选域名或优选ip  
+const CFIP = process.env.CFIP || '104.17.111.223';            // 节点优选域名或优选ip  
 const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
-const NAME = process.env.NAME || 'ata';                        // 节点名称
+const NAME = process.env.NAME || 'fgfg';                        // 节点名称
 
 // 创建运行文件夹
 if (!fs.existsSync(FILE_PATH)) {
